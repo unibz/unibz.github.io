@@ -21,7 +21,31 @@
       <img class="logo" src="img/logo.svg" alt="Unibz Logo">
       <h1>Free University of Bozen-Bolzano</h1>
       <p>
-        Hi, good morning and welcome! This is the design and development department of the Free University of Bozen-Bolzano. 
+        Hi, 
+        <span>
+          <script type="text/javascript">
+            var myDate = new Date(); 
+            /* hour is before noon */
+            if ( myDate.getHours() < 12 )  
+            { 
+                document.write("Good Morning!"); 
+            } 
+            else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+            if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) 
+            { 
+                document.write("Good Afternoon!"); 
+            } 
+            else  /* the hour is after 5pm, so it is between 6pm and midnight */
+            if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) 
+            { 
+                document.write("Good Evening!"); 
+            } 
+            else  /* the hour is not between 0 and 24, so something is wrong */
+            { 
+                document.write("I'm not sure what time it is!"); 
+            } 
+        </script>
+        </span> and welcome! This is the design and development department of the Free University of Bozen-Bolzano. 
       </p>
       <p>
         We are currently working on our new website and we are doing the whole thing in the open! Check the <a href="http://unibz.github.io/timeline/">project timelime</a> in order to view the state of the project.
