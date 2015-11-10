@@ -52,6 +52,7 @@ p > a {
 
 .grid_item {
   margin-bottom: 48px;
+  min-width: 0;
 }
 
 @media screen and (min-width: 768px) {
