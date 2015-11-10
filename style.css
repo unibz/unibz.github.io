@@ -60,18 +60,30 @@ p > a {
   }
 
   .grid {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
   .grid_item {
+    -webkit-flex: 0 0 49%;
+    -ms-flex: 0 0 49%;
     flex: 0 0 49%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .grid_item {
+    -webkit-flex: 0 0 32%;
+    -ms-flex: 0 0 32%;
     flex: 0 0 32%;
   }
 }
